@@ -36,7 +36,7 @@
     </section>
     <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-6 nopadding-lr dark-wrapper opaqued background-cover left-half" style="background-image: url{{asset('img/bg/bg10.jpg')}};">
+                <div class="col-sm-6 nopadding-lr dark-wrapper opaqued background-cover left-half" style="background-image: url({{asset('img/bg/bg10.jpg')}})">
                     <div class="dark-opaqued-half section-inner pad-sides-60 match-height" data-mh="promo-inner">
                         <h3 class="mb50">Love <span class="theme-accent-color">Steak?</span></h3>
                         <p class="lead mb50">Conveniently leverage other's distinctive expertise and backend metrics. Progressively harness intuitive systems and ethical niches. Continually drive extensible benefits vis-a-vis leading-edge meta-services. Conveniently leverage existing market-driven outsourcing vis-a-vis e-business process improvements. Intrinsicly extend quality interfaces with intermandated innovation.</p>
@@ -45,7 +45,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-6 nopadding-lr dark-wrapper opaqued background-cover right-half" style="background-image: url{{asset('img/bg/bg5.jpg')}};">
+                <div class="col-sm-6 nopadding-lr dark-wrapper opaqued background-cover right-half" style="background-image: url({{asset('img/bg/bg5.jpg')}})">
                     <div class="dark-opaqued-half section-inner pad-sides-60 match-height text-right" data-mh="promo-inner">
                         <h3 class="mb50">Create <span class="theme-accent-color">Memories</span></h3>
                         <p class="lead mb50">Conveniently leverage other's distinctive expertise and backend metrics. Progressively harness intuitive systems and ethical niches. Continually drive extensible benefits vis-a-vis leading-edge meta-services. Conveniently leverage existing market-driven outsourcing vis-a-vis e-business process improvements. Intrinsicly extend quality interfaces with intermandated innovation.</p>
@@ -55,247 +55,12 @@
                 </div>
             </div>
         </div>
-        <section class="dark-wrapper top-border-me opaqued parallax" data-parallax="scroll" data-image-src="{{asset('img/bg/bg4.jpg')}}" data-speed="0.8">
-            <div class="section-inner">
 
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 text-center mb100">
-                            <h2 class="section-heading">Our <span class="theme-accent-color">Upcoming</span> Events</h2>
-                            <hr class="thin-hr">
-                            <h3 class="section-subheading secondary-font">Try us for yourself today.</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="wow fadeIn" data-wow-delay="0.2s">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-12" role="tabpanel">
-                                <div class="text-center">
-                                    <!-- Nav tabs -->
-                                    <ul class="nav nav-justified icon-tabs" id="nav-tabs" role="tablist">
-                                        <li role="presentation" class="active">
-                                            <a href="#dustin" aria-controls="dustin" role="tab" data-toggle="tab">
-                                                <span class="tabtitle heading-font">Steak Night</span>
-                                                <span class="tabtitle small"><p class="lead">Tuesdays.</p></span>
-                                            </a>
-                                        </li>
-                                        <li role="presentation" class="">
-                                            <a href="#daksh" aria-controls="daksh" role="tab" data-toggle="tab">
-                                               <span class="tabtitle heading-font">Curry Club</span>
-                                               <span class="tabtitle small"><p class="lead">Thursdays.</p></span>
-                                            </a>
-                                        </li>
-                                        <li role="presentation" class="">
-                                            <a href="#anna" aria-controls="anna" role="tab" data-toggle="tab">
-                                                <span class="tabtitle heading-font">Sunday Special</span>
-                                                <span class="tabtitle small"><p class="lead">Sundays.</p></span>
-                                            </a>
-                                        </li>
-                                        <li role="presentation" class="">
-                                            <a href="#wafer" aria-controls="wafer" role="tab" data-toggle="tab">
-                                                <span class="tabtitle heading-font">Italian Cuisine</span>
-                                                <span class="tabtitle small"><p class="lead">April 25th</p></span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="mt60">
-                                    <!-- Tab panes -->
-                                    <div class="tab-content" id="tabs-collapse">
-                                        <div role="tabpanel" class="tab-pane fade in active" id="dustin">
-                                            <div class="tab-inner">
-                                                <h2 class="secondary-font mb30">Every Tuesday we offer the best steaks for all you meat lovers out there.</h2>
-                                                <p>Is post each that just leaf no. He connection interested so we an sympathize advantages. To said is it shed want do. Occasional middletons everything so to. Have spot part for his quit may. End sitting shewing who saw besides son musical adapted. Contrasted interested eat alteration pianoforte sympathize was. He families believed if no elegance interest surprise an. It abode wrong miles an so delay plate.</p>
-                                            </div>
-                                        </div>
-
-                                        <div role="tabpanel" class="tab-pane fade" id="daksh">
-                                            <div class="tab-inner">
-                                                <h2 class="secondary-font mb30">Like something spicy, then this is for you!</h2>
-                                                <p>Is post each that just leaf no. He connection interested so we an sympathize advantages. To said is it shed want do. Occasional middletons everything so to. Have spot part for his quit may. End sitting shewing who saw besides son musical adapted. Contrasted interested eat alteration pianoforte sympathize was. He families believed if no elegance interest surprise an. It abode wrong miles an so delay plate.</p>
-                                            </div>
-                                        </div>
-
-                                        <div role="tabpanel" class="tab-pane fade" id="anna">
-                                            <div class="tab-inner">
-                                                <h2 class="secondary-font mb30">Who doesnt love a roast?</h2>
-                                                <p>Is post each that just leaf no. He connection interested so we an sympathize advantages. To said is it shed want do. Occasional middletons everything so to. Have spot part for his quit may. End sitting shewing who saw besides son musical adapted. Contrasted interested eat alteration pianoforte sympathize was. He families believed if no elegance interest surprise an. It abode wrong miles an so delay plate.</p>
-                                            </div>
-                                        </div>
-
-                                        <div role="tabpanel" class="tab-pane fade" id="wafer">
-                                            <div class="tab-inner">
-                                                <h2 class="secondary-font mb30">Try something new and our special event.</h2>
-                                                <p>Is post each that just leaf no. He connection interested so we an sympathize advantages. To said is it shed want do. Occasional middletons everything so to. Have spot part for his quit may. End sitting shewing who saw besides son musical adapted. Contrasted interested eat alteration pianoforte sympathize was. He families believed if no elegance interest surprise an. It abode wrong miles an so delay plate.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="the-menu">
-                <div class="section-inner">
-
-                     <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12 text-center mb100">
-                                <h2 class="section-heading">Browse <span class="theme-accent-color">The</span> Menu</h2>
-                                <hr class="thin-hr">
-                                <h3 class="section-subheading secondary-font">Your tastebuds will thank you.</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="container">
-
-                        <div class="row mb100">
-                          <div class="col-md-4 wow fadeIn">
-                            <h2 class="mb50"><span class="heading-font text-uppercase">Fresh Pizza</span></h2>
-                            <h3>Lorem Ipsum <span class="theme-accent-color">$8.95</span></h3>
-                            <p>No phone no lights no motor car not a single luxury. Like Robinson Crusoe it's primitive as can be.</p>
-                            <h3>Lorem Ipsum <span class="theme-accent-color">$8.95</span></h3>
-                            <p>No phone no lights no motor car not a single luxury. Like Robinson Crusoe it's primitive as can be.</p>
-                            <h3>Lorem Ipsum <span class="theme-accent-color">$8.95</span></h3>
-                            <p>No phone no lights no motor car not a single luxury. Like Robinson Crusoe it's primitive as can be.</p>
-                            <h3>Lorem Ipsum <span class="theme-accent-color">$8.95</span></h3>
-                            <p>No phone no lights no motor car not a single luxury. Like Robinson Crusoe it's primitive as can be.</p>
-                          </div>
-
-                          <div class="col-md-4 wow fadeIn">
-                            <h2 class="mb50"><span class="heading-font text-uppercase">Famility Favourites</span></h2>
-                            <h3>Lorem Ipsum <span class="theme-accent-color">$8.95</span></h3>
-                            <p>No phone no lights no motor car not a single luxury. Like Robinson Crusoe it's primitive as can be.</p>
-                            <h3>Lorem Ipsum <span class="theme-accent-color">$8.95</span></h3>
-                            <p>No phone no lights no motor car not a single luxury. Like Robinson Crusoe it's primitive as can be.</p>
-                            <h3>Lorem Ipsum <span class="theme-accent-color">$8.95</span></h3>
-                            <p>No phone no lights no motor car not a single luxury. Like Robinson Crusoe it's primitive as can be.</p>
-                            <h3>Lorem Ipsum <span class="theme-accent-color">$8.95</span></h3>
-                            <p>No phone no lights no motor car not a single luxury. Like Robinson Crusoe it's primitive as can be.</p>
-                          </div>
-
-                          <div class="col-md-4 wow fadeIn">
-                            <h2 class="mb50"><span class="heading-font text-uppercase">Catch of the Day</span></h2>
-                            <h3>Lorem Ipsum <span class="theme-accent-color">$8.95</span></h3>
-                            <p>No phone no lights no motor car not a single luxury. Like Robinson Crusoe it's primitive as can be.</p>
-                            <h3>Lorem Ipsum <span class="theme-accent-color">$8.95</span></h3>
-                            <p>No phone no lights no motor car not a single luxury. Like Robinson Crusoe it's primitive as can be.</p>
-                            <h3>Lorem Ipsum <span class="theme-accent-color">$8.95</span></h3>
-                            <p>No phone no lights no motor car not a single luxury. Like Robinson Crusoe it's primitive as can be.</p>
-                            <h3>Lorem Ipsum <span class="theme-accent-color">$8.95</span></h3>
-                            <p>No phone no lights no motor car not a single luxury. Like Robinson Crusoe it's primitive as can be.</p>
-                          </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-6 wow fadeIn">
-                                <h2 class="mb50"><span class="heading-font text-uppercase">Starters</span></h2>
-                                <div class="food-menu-item">
-                                    <div class="row">
-                                        <div class="col-xs-3">
-                                            <img src="{{asset('img/food/meal4.jpg')}}" class="img-responsive">
-                                        </div>
-                                        <div class="col-xs-9">
-                                            <h3>Lorem Ipsum <span class="theme-accent-color">$8.95</span></h3>
-                                            <p>No phone no lights no motor car not a single luxury. Like Robinson Crusoe it's primitive as can be. Like Robinson Crusoe it's primitive as can be</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="food-menu-item">
-                                    <div class="row">
-                                        <div class="col-xs-3">
-                                            <img src="{{asset('img/food/meal1.jpg')}}" class="img-responsive">
-                                        </div>
-                                        <div class="col-xs-9">
-                                            <h3>Lorem Ipsum <span class="theme-accent-color">$8.95</span></h3>
-                                            <p>No phone no lights no motor car not a single luxury. Like Robinson Crusoe it's primitive as can be. Like Robinson Crusoe it's primitive as can be</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="food-menu-item">
-                                    <div class="row">
-                                        <div class="col-xs-3">
-                                            <img src="{{asset('img/food/meal2.jpg')}}" class="img-responsive">
-                                        </div>
-                                        <div class="col-xs-9">
-                                            <h3>Lorem Ipsum <span class="theme-accent-color">$8.95</span></h3>
-                                            <p>No phone no lights no motor car not a single luxury. Like Robinson Crusoe it's primitive as can be. Like Robinson Crusoe it's primitive as can be</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="food-menu-item">
-                                    <div class="row">
-                                        <div class="col-xs-3">
-                                            <img src="{{asset('img/food/meal3.jpg')}}" class="img-responsive">
-                                        </div>
-                                        <div class="col-xs-9">
-                                            <h3>Lorem Ipsum <span class="theme-accent-color">$8.95</span></h3>
-                                            <p>No phone no lights no motor car not a single luxury. Like Robinson Crusoe it's primitive as can be. Like Robinson Crusoe it's primitive as can be</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 wow fadeIn">
-                                <h2 class="mb50"><span class="heading-font text-uppercase">Main Course</span></h2>
-                                <div class="food-menu-item">
-                                    <div class="row">
-                                        <div class="col-xs-3">
-                                            <img src="{{asset('img/food/meal3.jpg')}}" class="img-responsive">
-                                        </div>
-                                        <div class="col-xs-9">
-                                            <h3>Lorem Ipsum <span class="theme-accent-color">$8.95</span></h3>
-                                            <p>No phone no lights no motor car not a single luxury. Like Robinson Crusoe it's primitive as can be. Like Robinson Crusoe it's primitive as can be</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="food-menu-item">
-                                    <div class="row">
-                                        <div class="col-xs-3">
-                                            <img src="{{asset('img/food/meal5.jpg')}}" class="img-responsive">
-                                        </div>
-                                        <div class="col-xs-9">
-                                            <h3>Lorem Ipsum <span class="theme-accent-color">$8.95</span></h3>
-                                            <p>No phone no lights no motor car not a single luxury. Like Robinson Crusoe it's primitive as can be. Like Robinson Crusoe it's primitive as can be</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="food-menu-item">
-                                    <div class="row">
-                                        <div class="col-xs-3">
-                                            <img src="{{asset('img/food/meal6.jpg')}}" class="img-responsive">
-                                        </div>
-                                        <div class="col-xs-9">
-                                            <h3>Lorem Ipsum <span class="theme-accent-color">$8.95</span></h3>
-                                            <p>No phone no lights no motor car not a single luxury. Like Robinson Crusoe it's primitive as can be. Like Robinson Crusoe it's primitive as can be</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="food-menu-item">
-                                    <div class="row">
-                                        <div class="col-xs-3">
-                                            <img src="{{asset('img/food/meal7.jpg')}}" class="img-responsive">
-                                        </div>
-                                        <div class="col-xs-9">
-                                            <h3>Lorem Ipsum <span class="theme-accent-color">$8.95</span></h3>
-                                            <p>No phone no lights no motor car not a single luxury. Like Robinson Crusoe it's primitive as can be. Like Robinson Crusoe it's primitive as can be</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        
 
             <section class="dark-wrapper opaqued parallax" data-parallax="scroll" data-image-src="{{asset('img/bg/bg4.jpg')}}" data-speed="0.8">
                 <div class="section-inner">
-                     <div class="container">
+                    <div class="container">
                         <div class="row">
                             <div class="col-lg-12 text-center mb100">
                                 <h2 class="section-heading">Our <span class="theme-accent-color">Acclaimed</span> Chefs</h2>
@@ -346,7 +111,7 @@
                                         <li>
                                             <div class="row hover-item">
                                                 <div class="col-xs-12">
-                                                    <img src="assets/img/team/2.jpg" class="img-responsive smoothie" alt="">
+                                                    <img src="{{asset('img/team/2.jpg')}}" class="img-responsive smoothie" alt="">
                                                 </div>
                                                 <div class="col-xs-12 overlay-item-caption smoothie"></div>
                                                 <div class="col-xs-12 hover-item-caption smoothie">
