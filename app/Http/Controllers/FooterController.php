@@ -14,7 +14,8 @@ class FooterController extends Controller
      */
     public function index()
     {
-        //
+        $footer = Footer::all();
+        return view('footer.index',compact('footer'));
     }
 
     /**
@@ -46,7 +47,7 @@ class FooterController extends Controller
      */
     public function show(Footer $footer)
     {
-        //
+        return view('footer.show', compact('footer'));
     }
 
     /**
@@ -57,7 +58,7 @@ class FooterController extends Controller
      */
     public function edit(Footer $footer)
     {
-        //
+        return view('footer.edit', compact('footer'));
     }
 
     /**
@@ -69,7 +70,17 @@ class FooterController extends Controller
      */
     public function update(Request $request, Footer $footer)
     {
-        //
+        $footer->copyright = $request->copyright;
+        $footer->icon1 = $request->icon1;
+        $footer->icon2 = $request->icon2;
+        $footer->icon3 = $request->icon3;
+        $footer->icon4 = $request->icon4;
+        $footer->icon5 = $request->icon5;
+        $footer->icon6 = $request->icon6;
+
+        $request->save();
+
+        return redirect()->route('footer.index');
     }
 
     /**
@@ -80,6 +91,7 @@ class FooterController extends Controller
      */
     public function destroy(Footer $footer)
     {
-        //
+        $footer->delete();
+        return redirect()->route('footer.index');
     }
 }

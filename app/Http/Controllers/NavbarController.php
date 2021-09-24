@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Navbar;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class NavbarController extends Controller
 {
@@ -14,7 +15,8 @@ class NavbarController extends Controller
      */
     public function index()
     {
-        //
+        $navbar = Navbar::all();
+        return view('navbar.index', compact('navbar'));
     }
 
     /**
@@ -46,7 +48,7 @@ class NavbarController extends Controller
      */
     public function show(Navbar $navbar)
     {
-        //
+        return view('navbar.show', compact('navbar'));
     }
 
     /**
@@ -57,7 +59,7 @@ class NavbarController extends Controller
      */
     public function edit(Navbar $navbar)
     {
-        //
+        return view('navbar.edit', compact('navbar'));
     }
 
     /**
@@ -68,8 +70,25 @@ class NavbarController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Navbar $navbar)
-    {
-        //
+    {   
+        Storage::disk("public")->delete("img/".$navbar->img);
+        $navbar->img = $request->file("url")->hashName();
+        $navbar->titrePartie1 = $request->titrePartie1;
+        $navbar->titrePartie2 = $request->titrePartie2;
+        $navbar->link1 = $request->navbar->link1;
+        $navbar->link2 = $request->navbar->link2;
+        $navbar->link3 = $request->navbar->link3;
+        $navbar->link4 = $request->navbar->link4;
+        $navbar->link5 = $request->navbar->link5;
+        $navbar->ddlink5 = $request->ddlink5;
+        $navbar->iconBtn = $request->iconBtn;
+        $navbar->btnSearch = $request->btnSearch;
+
+        $request->save();
+
+        $request->file("url")->storePublicly("img", "public");
+
+        return redirect()->route('navbar.index');
     }
 
     /**
@@ -80,6 +99,8 @@ class NavbarController extends Controller
      */
     public function destroy(Navbar $navbar)
     {
-        //
+        Storage::disk("public")->delete("/img".$navbar->img);
+        $navbar->delete();
+        return redirect()->route("navbar.index");
     }
 }
