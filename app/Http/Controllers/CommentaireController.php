@@ -14,7 +14,8 @@ class CommentaireController extends Controller
      */
     public function index()
     {
-        //
+        $dataComm = Commentaire::all();
+        return view('backoffice.commentaires.index', compact('dataComm'));
     }
 
     /**
@@ -57,7 +58,7 @@ class CommentaireController extends Controller
      */
     public function edit(Commentaire $commentaire)
     {
-        //
+        return view('backoffice.commentaires.edit', compact('commentaire'));
     }
 
     /**
@@ -69,7 +70,35 @@ class CommentaireController extends Controller
      */
     public function update(Request $request, Commentaire $commentaire)
     {
-        //
+
+        request()->validate([
+            "titrepart1"=>"required",
+            "titrepart2"=>"required",
+            "titrepart3"=>"required",
+            "soustitre"=>"required",
+            "imgcarousel1"=>"required",
+            "txtcarousel1"=>"required",
+            "imgcarousel2"=>"required",
+            "txtcarousel2"=>"required",
+            "imgcarousel3"=>"required",
+            "imgcarousel4"=>"required",
+            "txtcarousel4"=>"required",
+
+
+        ]);
+
+        $commentaire->img = $request->img;
+        $commentaire->titrepart1 = $request->titrepart1;
+        $commentaire->titrepart2 = $request->titrepart2;
+        $commentaire->titrepart3 = $request->titrepart3;
+        $commentaire->soustitre = $request->soustitre;
+        $commentaire->img2 = $request->img2;
+        $commentaire->nom1 = $request->nom1;
+        $commentaire->commentaire1 = $request->commentaire1;
+        $commentaire->nom2 = $request->nom2;
+        $commentaire->commentaire2 = $request->commentaire2;
+        $commentaire->save();
+        return redirect()->route('commentaires.index')->with('message', 'updated');
     }
 
     /**

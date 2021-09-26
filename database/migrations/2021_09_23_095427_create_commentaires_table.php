@@ -23,18 +23,8 @@ class CreateCommentairesTable extends Migration
             $table->text('img2');
             $table->string('nom1');
             $table->text('commentaire1');
-            $table->string('icon1com1');
-            $table->string('icon2com1');
-            $table->string('icon3com1');
-            $table->string('icon4com1');
-            $table->string('icon5com1');
             $table->string('nom2');
             $table->text('commentaire2');
-            $table->string('icon1com2');
-            $table->string('icon2com2');
-            $table->string('icon3com2');
-            $table->string('icon4com2');
-            $table->string('icon5com2');
             $table->timestamps();
         });
     }

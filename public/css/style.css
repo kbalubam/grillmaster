@@ -1,6 +1,6 @@
 /* ==================================================
-//  ____  _     _   _            _   _          _____ _                              
-// |  _ \(_)___| |_(_)_ __   ___| |_(_)_   ____|_   _| |__   ___ _ __ ___   ___  ___ 
+//  ____  _     _   _            _   _          _____ _
+// |  _ \(_)___| |_(_)_ __   ___| |_(_)_   ____|_   _| |__   ___ _ __ ___   ___  ___
 // | | | | / __| __| | '_ \ / __| __| \ \ / / _ \| | | '_ \ / _ \ '_ ` _ \ / _ \/ __|
 // | |_| | \__ \ |_| | | | | (__| |_| |\ V /  __/| | | | | |  __/ | | | | |  __/\__ \
 // |____/|_|___/\__|_|_| |_|\___|\__|_| \_/ \___||_| |_| |_|\___|_| |_| |_|\___||___/
@@ -18,8 +18,8 @@
 /*  6 - SECTIONS
 /*  7 - PORTFOLIO
 /*  8 - BLOG
-/*  9 - COMMENTS 
-/*  10 - HOVER CAPTIONS 
+/*  9 - COMMENTS
+/*  10 - HOVER CAPTIONS
 /*  11 - FOOTER
 /*  12 - CAROUSEL STYLES
 /*  13 - SEARCH
@@ -51,7 +51,7 @@ body {
     background-color: #222;
     font-weight: 400;
     line-height: 1.75;
-    color: #333;    
+    color: #333;
 }
 
 .master-wrapper {
@@ -787,7 +787,7 @@ section, section.white-bg {
 .dark-wrapper h5,
 .dark-wrapper h6,
 .dark-wrapper p,
-.dark-wrapper a, 
+.dark-wrapper a,
 .dark-wrapper {
     color: #f3f3f3
 }
@@ -865,7 +865,7 @@ section h3.section-subheading {
 }
 
 /*-----------------------------------------------------------------------------------*/
-/*  10 - HOVER CAPTIONS 
+/*  10 - HOVER CAPTIONS
 /*-----------------------------------------------------------------------------------*/
 
 .hover-item {
@@ -895,7 +895,7 @@ section h3.section-subheading {
     background: -ms-linear-gradient(top, rgba(0,0,0,0) 28%,rgba(0,0,0,0.5) 100%); /* IE10+ */
     background: linear-gradient(to bottom, rgba(0,0,0,0) 28%,rgba(0,0,0,0.5) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
-    text-align: center;    
+    text-align: center;
     text-shadow: 0 0 1px #000;
 }
 
@@ -1265,7 +1265,7 @@ footer.white-wrapper .social-links li a {
 
 .form-control:-moz-placeholder {
     /* Firefox 18- */
-    
+
     color: #444;
     font-weight: 700;
     text-transform: uppercase;
@@ -1273,7 +1273,7 @@ footer.white-wrapper .social-links li a {
 
 .form-control::-moz-placeholder {
     /* Firefox 19+ */
-    
+
     color: #444;
     font-weight: 700;
     text-transform: uppercase;
@@ -1294,7 +1294,7 @@ footer.white-wrapper .social-links li a {
 
 .dark-wrapper .form-control:-moz-placeholder {
     /* Firefox 18- */
-    
+
     color: #f6f6f6;
     font-weight: 700;
     text-transform: uppercase;
@@ -1302,7 +1302,7 @@ footer.white-wrapper .social-links li a {
 
 .dark-wrapper .form-control::-moz-placeholder {
     /* Firefox 19+ */
-    
+
     color: #f6f6f6;
     font-weight: 700;
     text-transform: uppercase;
@@ -1425,7 +1425,7 @@ footer.white-wrapper .social-links li a {
         top: auto;
         right: 20px;
         bottom: 0px;
-    }    
+    }
     .pad-top-180 {
         padding-top: 180px;
     }
@@ -1454,7 +1454,7 @@ footer.white-wrapper .social-links li a {
 		border-bottom-color: rgba(0, 0, 0, 0);
 		content: '';
 	}
-	
+
 	.dropdown-menu:after {
 		position: absolute;
 		top: -6px;
@@ -1662,7 +1662,7 @@ footer.white-wrapper .social-links li a {
      }
      .navbar-default .navbar-brand {
         margin-top: 2px;
-     }    
+     }
      .nav-justified>li {
         width: 50%;
         float: left;
@@ -1921,7 +1921,7 @@ footer.white-wrapper .social-links li a {
   background: transparent;
   outline: none;
   -webkit-tap-highlight-color: transparent;
-  -webkit-tap-highlight-color: transparent; 
+  -webkit-tap-highlight-color: transparent;
 -moz-transform: scale(0.8);
 -webkit-transform: scale(0.8);
 -o-transform: scale(0.8);
@@ -1943,7 +1943,7 @@ transform: scale(0.8);
     border-radius: 0px;
     transition: 0.3s;
     background: #fff;
-    position: relative; 
+    position: relative;
 }
 
 .tcon-menu__lines::before, .tcon-menu__lines::after {
@@ -2085,4 +2085,10 @@ a#back-to-top.show {
 
 .food-menu-item h3 {
     margin-top: 0;
+}
+
+.table {
+    max-width: none;
+    table-layout: fixed;
+    word-wrap: break-word;
 }

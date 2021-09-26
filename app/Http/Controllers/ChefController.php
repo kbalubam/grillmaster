@@ -14,7 +14,8 @@ class ChefController extends Controller
      */
     public function index()
     {
-        //
+        $dataChef = Chef::all();
+        return view('backoffice.chef.index', compact('dataChef'));
     }
 
     /**
@@ -57,7 +58,7 @@ class ChefController extends Controller
      */
     public function edit(Chef $chef)
     {
-        //
+        return view('backoffice.chef.edit', compact("chef"));
     }
 
     /**
@@ -69,7 +70,39 @@ class ChefController extends Controller
      */
     public function update(Request $request, Chef $chef)
     {
-        //
+
+        request()->validate([
+            "titrepart1"=>"required",
+            "titrepart2"=>"required",
+            "titrepart3"=>"required",
+            "soustitre"=>"required",
+            "imgcarousel1"=>"required",
+            "txtcarousel1"=>"required",
+            "imgcarousel2"=>"required",
+            "txtcarousel2"=>"required",
+            "imgcarousel3"=>"required",
+            "imgcarousel4"=>"required",
+            "txtcarousel4"=>"required",
+
+
+        ]);
+
+        $chef->img = $request->img;
+        $chef->titrepart1 = $request->titrepart1;
+
+        $chef->titrepart2 = $request->titrepart2;
+        $chef->titrepart3 = $request->titrepart3;
+        $chef->soustitre = $request->soustitre;
+        $chef->imgcarousel1 = $request->imgcarousel1;
+        $chef->txtcarousel1 = $request->txtcarousel1;
+        $chef->imgcarousel2 = $request->imgcarousel2;
+        $chef->txtcarousel2 = $request->txtcarousel2;
+        $chef->imgcarousel3 = $request->imgcarousel3;
+        $chef->txtcarousel3 = $request->txtcarousel3;
+        $chef->imgcarousel4 = $request->imgcarousel4;
+        $chef->txtcarousel4 = $request->txtcarousel4;
+        $chef->save();
+        return redirect()->route('chefs.index')->with('message', 'updated');
     }
 
     /**
@@ -80,6 +113,7 @@ class ChefController extends Controller
      */
     public function destroy(Chef $chef)
     {
-        //
+        $chef->delete();
+        return redirect()->route('chef.index');
     }
 }

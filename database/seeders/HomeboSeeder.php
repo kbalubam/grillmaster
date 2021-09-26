@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
-class NavbarSeeder extends Seeder
+class HomeboSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,6 +13,6 @@ class NavbarSeeder extends Seeder
      */
     public function run()
     {
-        //!
+        //
     }
 }

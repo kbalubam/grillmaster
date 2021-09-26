@@ -1,5 +1,10 @@
 <?php
 
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ChefController;
+use App\Http\Controllers\CommentaireController;
+use App\Http\Controllers\HomeboController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,7 +21,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('pages.index');
 });
-
+Route::resource('/abouts', AboutController::class);
+Route::resource('/chefs', ChefController::class)->middleware(['auth', 'admin'], ['auth', 'webmaster']);
+Route::resource('/commentaires', CommentaireController::class)->middleware(['auth', 'admin'], ['auth', 'webmaster'], ['auth', 'editeur']);
+Route::resource('/homebos', HomeboController::class)->middleware(['auth', 'admin'], ['auth', 'webmaster'], ['auth', 'editeur']);
+Route::resource('/users', UserController::class)->middleware(['auth', 'admin']);
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
