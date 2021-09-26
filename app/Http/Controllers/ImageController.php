@@ -71,6 +71,19 @@ class ImageController extends Controller
      */
     public function update(Request $request, Image $image)
     {
+        $request->validate([
+            "img1" => ["required", "min:1", "max:255"],
+            "titre1part1" => ["required", "min:1", "max:255"],
+            "titre1part2" => ["required", "min:1", "max:255"],
+            "text1" => ["required", "min:1", "max:255"],
+            "txtbtn1" => ["required", "min:1", "max:255"],
+            "img2" => ["required", "min:1", "max:255"],
+            "titre2part1" => ["required", "min:1", "max:255"],
+            "titre2part2" => ["required", "min:1", "max:255"],
+            "text2" => ["required", "min:1", "max:255"],
+            "txtbtn2" => ["required", "min:1", "max:255"],
+        ]);
+        
         Storage::disk("public")->delete("img/".$image->img);
         $image->img1 = $request->file("url")->hashName();
         $image->titre1part1 = $request->titre1part1;

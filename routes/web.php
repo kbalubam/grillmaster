@@ -1,5 +1,12 @@
 <?php
 
+use App\Http\Controllers\BackOfficeController;
+use App\Http\Controllers\FooterController;
+use App\Http\Controllers\HeaderController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ImageController;
+use App\Http\Controllers\NavbarController;
+use App\Http\Controllers\ReservationController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +20,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('pages.index');
-});
+Route::get('/', [HomeController::class, 'index']);
+
+Route::get('/backoffice', [BackOfficeController::class, 'index']);
+
+Route::resource('/navbar', NavbarController::class);
+Route::resource('/header', HeaderController::class);
+Route::resource('/image', ImageController::class);
+Route::resource('/reservation', ReservationController::class);
+Route::resource('/footer', FooterController::class);
 
 Route::get('/dashboard', function () {
     return view('dashboard');

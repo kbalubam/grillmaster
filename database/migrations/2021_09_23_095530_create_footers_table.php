@@ -22,6 +22,7 @@ class CreateFootersTable extends Migration
             $table->string('icon4');
             $table->string('icon5');
             $table->string('icon6');
+            $table->string('icon7');
             $table->timestamps();
         });
     }

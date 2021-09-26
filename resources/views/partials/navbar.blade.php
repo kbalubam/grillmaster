@@ -1,6 +1,9 @@
+@foreach ($navbar as $data)
+    
+
 <div class="preloader">
         <div class="preloader-img">
-            <span class="loading-animation animate-flicker"><img src="{{asset('img/loading.GIF')}}" alt="loading" /></span>
+            <span class="loading-animation animate-flicker"><img src="{{$data->img}}" alt="loading" /></span>
         </div>
     </div>
 
@@ -15,20 +18,20 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand smoothie" href="index.html">THE <span class="theme-accent-color">GRILL</span></a>
+                <a class="navbar-brand smoothie" href="index.html">{{$data->titrePart1}} <span class="theme-accent-color">{{$data->titrePart2}}</span></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="main-navigation">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#about" class="page-scroll">About Us</a></li>
-                    <li><a href="#about" class="page-scroll">Specials</a></li>
-                    <li><a href="#the-menu" class="page-scroll">Our Menu</a></li>
-                    <li><a href="#about" class="page-scroll">Book a Table</a></li>
+                    <li><a href="#about" class="page-scroll">{{$data->link1}}</a></li>
+                    <li><a href="#about" class="page-scroll">{{$data->link2}}</a></li>
+                    <li><a href="#the-menu" class="page-scroll">{{$data->link3}}</a></li>
+                    <li><a href="#about" class="page-scroll">{{$data->link4}}</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Extras <span class="pe-7s-angle-down"></span></a>
+                        <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">{{$data->link5}} <span class="pe-7s-angle-down"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="404.html">404</a></li>
+                            <li><a href="404.html">{{$data->ddlink5}}</a></li>
                         </ul>
                     </li>
                     <li><a href="#search"><i class="fa fa-search"></i></a></li>
@@ -41,9 +44,11 @@
         <!-- /.container-fluid -->
     </nav>
     <div id="search-wrapper">
-            <button type="button" class="close">×</button>
+            <button type="button" class="close">{{$data->iconBtn}}</button>
             <form>
                 <input type="search" value="" placeholder="Enter Search Term" />
-                <button type="submit" class="btn btn-primary">Search</button>
+                <button type="submit" class="btn btn-primary">{{$data->btnSearch}}</button>
             </form>
 </div>
+
+@endforeach

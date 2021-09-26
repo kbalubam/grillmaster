@@ -69,7 +69,17 @@ class FooterController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Footer $footer)
-    {
+    {   
+        $request->validate([
+            "copyright" => ["required", "min:1", "max:255"],
+            "icon1" => ["required", "min:1", "max:255"],
+            "icon2" => ["required", "min:1", "max:255"],
+            "icon3" => ["required", "min:1", "max:255"],
+            "icon4" => ["required", "min:1", "max:255"],
+            "icon5" => ["required", "min:1", "max:255"],
+            "icon6" => ["required", "min:1", "max:255"],
+            "icon7" => ["required", "min:1", "max:255"]
+        ]);
         $footer->copyright = $request->copyright;
         $footer->icon1 = $request->icon1;
         $footer->icon2 = $request->icon2;
@@ -77,7 +87,7 @@ class FooterController extends Controller
         $footer->icon4 = $request->icon4;
         $footer->icon5 = $request->icon5;
         $footer->icon6 = $request->icon6;
-
+        $footer->icon7 = $request->icon7;
         $request->save();
 
         return redirect()->route('footer.index');

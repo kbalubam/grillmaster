@@ -21,7 +21,8 @@ class FooterSeeder extends Seeder
             'icon3' => 'fa fa-dribbble',
             'icon4' => 'fa fa-facebook',
             'icon5' => 'fa fa-behance',
-            'icon6' => 'fa fa-linkedin'
+            'icon6' => 'fa fa-linkedin',
+            'icon7' => 'fa fa-long-arrow-up'
         ]);
     }
 }

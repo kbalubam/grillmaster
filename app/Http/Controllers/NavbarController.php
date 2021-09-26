@@ -71,6 +71,20 @@ class NavbarController extends Controller
      */
     public function update(Request $request, Navbar $navbar)
     {   
+        $request->validate([
+            "img" => ["required", "min:1", "max:255"],
+            "titre1part1" => ["required", "min:1", "max:255"],
+            "titre1part2" => ["required", "min:1", "max:255"],
+            "link1" => ["required", "min:1", "max:255"],
+            "link2" => ["required", "min:1", "max:255"],
+            "link3" => ["required", "min:1", "max:255"],
+            "link4" => ["required", "min:1", "max:255"],
+            "link5" => ["required", "min:1", "max:255"],
+            "ddlink5" => ["required", "min:1", "max:255"],
+            "iconBtn" => ["required", "min:1", "max:255"],
+            "btnSearch" => ["required", "min:1", "max:255"]
+        ]);
+
         Storage::disk("public")->delete("img/".$navbar->img);
         $navbar->img = $request->file("url")->hashName();
         $navbar->titrePartie1 = $request->titrePartie1;

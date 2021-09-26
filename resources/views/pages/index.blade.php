@@ -40,40 +40,35 @@
 
         </div>
     </section>
+    @foreach ($image as $data)
+        
+    
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-6 nopadding-lr dark-wrapper opaqued background-cover left-half"
-                style="background-image: url({{ asset('img/bg/bg10.jpg') }})">
+                style="background-image: url({{ $data->img1}})">
                 <div class="dark-opaqued-half section-inner pad-sides-60 match-height" data-mh="promo-inner">
-                    <h3 class="mb50">Love <span class="theme-accent-color">Steak?</span></h3>
-                    <p class="lead mb50">Conveniently leverage other's distinctive expertise and backend metrics.
-                        Progressively harness intuitive systems and ethical niches. Continually drive extensible benefits
-                        vis-a-vis leading-edge meta-services. Conveniently leverage existing market-driven outsourcing
-                        vis-a-vis e-business process improvements. Intrinsicly extend quality interfaces with intermandated
-                        innovation.</p>
+                    <h3 class="mb50">{{$data->titre1part1}} <span class="theme-accent-color">{{$data->titre1part2}}</span></h3>
+                    <p class="lead mb50">{{$data->text1}}</p>
                     <div class="spacer-180"></div>
-                    <p class="mt30"><a href="#contact" class="btn btn-primary btn-red page-scroll">Book Now</a>
+                    <p class="mt30"><a href="#contact" class="btn btn-primary btn-red page-scroll">{{$data->textbtn1}}</a>
                     </p>
                 </div>
             </div>
 
             <div class="col-sm-6 nopadding-lr dark-wrapper opaqued background-cover right-half"
-                style="background-image: url({{ asset('img/bg/bg5.jpg') }})">
+                style="background-image: url({{$data->img2}})">
                 <div class="dark-opaqued-half section-inner pad-sides-60 match-height text-right" data-mh="promo-inner">
-                    <h3 class="mb50">Create <span class="theme-accent-color">Memories</span></h3>
-                    <p class="lead mb50">Conveniently leverage other's distinctive expertise and backend metrics.
-                        Progressively harness intuitive systems and ethical niches. Continually drive extensible benefits
-                        vis-a-vis leading-edge meta-services. Conveniently leverage existing market-driven outsourcing
-                        vis-a-vis e-business process improvements. Intrinsicly extend quality interfaces with intermandated
-                        innovation.</p>
+                    <h3 class="mb50">{{$data->titre2part1}} <span class="theme-accent-color">{{$data->titre2part2}}</span></h3>
+                    <p class="lead mb50">{{$data->text2}}.</p>
                     <div class="spacer-180"></div>
-                    <p class="mt30"><a href="#contact" class="btn btn-primary btn-white page-scroll">View Menu</a>
+                    <p class="mt30"><a href="#contact" class="btn btn-primary btn-white page-scroll">{{$data->textbtn2}}</a>
                     </p>
                 </div>
             </div>
         </div>
     </div>
-
+    @endforeach
 
 
     <section class="dark-wrapper opaqued parallax" data-parallax="scroll" data-image-src="{{ asset('img/bg/bg4.jpg') }}"
@@ -320,15 +315,18 @@
             </div>
         </div>
     </section>
-    <section class="dark-wrapper opaqued parallax" data-parallax="scroll" data-image-src="{{ asset('img/bg/bg1.jpg') }}"
+    @foreach ($reservation as $data)
+        
+    
+    <section class="dark-wrapper opaqued parallax" data-parallax="scroll" data-image-src="{{ $data->img }}"
         data-speed="0.8">
         <div class="section-inner">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center mb100">
-                        <h2 class="section-heading">Book <span class="theme-accent-color">Your</span> Table</h2>
+                        <h2 class="section-heading">{{ $data->titrepart1 }} <span class="theme-accent-color">{{ $data->titrepart2 }} </span> {{ $data->titrepart3 }} </h2>
                         <hr class="thin-hr">
-                        <h3 class="section-subheading secondary-font">Satisfaction, everytime.</h3>
+                        <h3 class="section-subheading secondary-font">{{ $data->soustitre }}</h3>
                     </div>
                 </div>
             </div>
@@ -336,42 +334,42 @@
                 <div class="row mb100">
                     <!-- Address, Phone & Email -->
                     <div class="col-md-5 col-md-offset-1 wow fadeIn">
-                        <h3 class="mb30">Address</h3>
-                        <p class="lead">Florence Building</p>
-                        <p class="lead">Kings Square<br>
-                            London, LDN1 23 </p>
-                        <p class="lead">+448754 658 048<br>
+                        <h3 class="mb30">{{ $data->adresse }}</h3>
+                        <p class="lead">{{ $data->nomimmeuble }}</p>
+                        <p class="lead">{{ $data->rue }}<br>
+                            {{ $data->ville }} </p>
+                        <p class="lead">{{ $data->phone }}<br>
                     </div>
 
                     <div class="col-md-5 col-sm-7 wow fadeIn">
-                        <h3 class="mb30">Opening Times</h3>
+                        <h3 class="mb30">{{ $data->ouverture }}</h3>
                         <div class="row">
                             <div class="col-xs-5">
                                 <ul class="list-unstyled weekdays">
-                                    <li>Monday</li>
-                                    <li>Tuesday</li>
-                                    <li>Wednesday</li>
-                                    <li>Thursday</li>
-                                    <li>Friday</li>
-                                    <li>Saturday</li>
-                                    <li>Sunday</li>
+                                    <li>{{ $data->jour1 }}</li>
+                                    <li>{{ $data->jour2 }}</li>
+                                    <li>{{ $data->jour3 }}</li>
+                                    <li>{{ $data->jour4 }}</li>
+                                    <li>{{ $data->jour5 }}</li>
+                                    <li>{{ $data->jour6 }}</li>
+                                    <li>{{ $data->jour7 }}</li>
                                 </ul>
                             </div>
                             <div class="col-xs-7">
                                 <ul class="list-unstyled">
-                                    <li>11:00 AM - 11:00 PM</li>
-                                    <li>11:00 AM - 11:00 PM</li>
-                                    <li>11:00 AM - 11:00 PM</li>
-                                    <li>11:00 AM - 11:00 PM</li>
-                                    <li>11:00 AM - 1:00 AM</li>
-                                    <li>11:00 AM - 1:00 AM</li>
-                                    <li>11:00 AM - 1:00 AM</li>
+                                    <li>{{ $data->horaire1 }}</li>
+                                    <li>{{ $data->horaire2 }}</li>
+                                    <li>{{ $data->horaire3 }}</li>
+                                    <li>{{ $data->horaire4 }}</li>
+                                    <li>{{ $data->horaire5 }}</li>
+                                    <li>{{ $data->horaire6 }}</li>
+                                    <li>{{ $data->horaire7 }}</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-
+    @endforeach
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1">
                         <div class="row">

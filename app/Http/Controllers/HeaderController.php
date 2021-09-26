@@ -72,6 +72,11 @@ class HeaderController extends Controller
      */
     public function update(Request $request, Header $header)
     {
+        $request->validate([
+            "icon1" => ["required", "min:1", "max:255"],
+            "img" => ["required", "min:1", "max:255"],
+            "icon2" => ["required", "min:1", "max:255"],
+        ]);
         Storage::disk("public")->delete("/img".$header->img);
         $header->icon1 = $request->icon1;
         $header->img = $request->file('url')->hashName();

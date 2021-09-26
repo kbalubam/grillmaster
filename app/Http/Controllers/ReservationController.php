@@ -71,6 +71,35 @@ class ReservationController extends Controller
      */
     public function update(Request $request, Reservation $reservation)
     {
+        $request->validate([
+            "img" => ["required", "min:1", "max:255"],
+            "titrepart1" => ["required", "min:1", "max:255"],
+            "titrepart2" => ["required", "min:1", "max:255"],
+            "titrepart3" => ["required", "min:1", "max:255"],
+            "soustitre" => ["required", "min:1", "max:255"],
+            "adresse" => ["required", "min:1", "max:255"],
+            "nomimmeuble" => ["required", "min:1", "max:255"],
+            "rue" => ["required", "min:1", "max:255"],
+            "ville" => ["required", "min:1", "max:255"],
+            "phone" => ["required", "min:1", "max:255"],
+            "ouverture" => ["required", "min:1", "max:255"],
+            "jour1" => ["required", "min:1", "max:255"],
+            "jour2" => ["required", "min:1", "max:255"],
+            "jour3" => ["required", "min:1", "max:255"],
+            "jour4" => ["required", "min:1", "max:255"],
+            "jour5" => ["required", "min:1", "max:255"],
+            "jour6" => ["required", "min:1", "max:255"],
+            "jour7" => ["required", "min:1", "max:255"],
+            "horaire1" => ["required", "min:1", "max:255"],
+            "horaire2" => ["required", "min:1", "max:255"],
+            "horaire3" => ["required", "min:1", "max:255"],
+            "horaire4" => ["required", "min:1", "max:255"],
+            "horaire5" => ["required", "min:1", "max:255"],
+            "horaire6" => ["required", "min:1", "max:255"],
+            "horaire7" => ["required", "min:1", "max:255"],
+        ]);
+
+
         Storage::disk('public')->delete("img/bg/".$reservation->img);
         $reservation->img = $request->file('url')->hashName();
         $reservation->titrepart1 = $request->titrepart1;
