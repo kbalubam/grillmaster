@@ -26,6 +26,8 @@
                 <!-- Custom Fonts -->
                 <link href="{{asset('font-awesome-5.15.0/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
                 <link href="{{asset('css/pe-icons.css')}}" rel="stylesheet">
+                
+                <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
             </head>
 <body>
@@ -34,63 +36,63 @@
         <ul class="nav-list m-0 p-0"> 
             <li>
                 <a href="/backoffice">
-                    <i class="fab fa-themeisle"></i>
+                    <i class="bx bx-home"></i>
                     <span class="links_name">Home</span>
                 </a>
                 <span class="tooltip">Home</span>
             </li>
             <li>
                 <a href="/navbar">
-                    <i class='bx bx-chat'></i>
+                    <i class='bx bxs-navigation'></i>
                     <span class="links_name">Navbar</span>
                 </a>
                 <span class="tooltip">Navbar</span>
             </li>
             <li>
                 <a href="/header">
-                    <i class='bx bx-pie-chart-alt-2'></i>
+                    <i class='bx bx-heading'></i>
                     <span class="links_name">Header</span>
                 </a>
                 <span class="tooltip">Header</span>
             </li>
             <li>
                 <a href="/abouts">
-                    <i class='bx bx-folder'></i>
+                    <i class='bx bxs-folder'></i>
                     <span class="links_name">About</span>
                 </a>
                 <span class="tooltip">About</span>
             </li>
             <li>
                 <a href="/image">
-                    <i class='bx bx-cart-alt'></i>
+                    <i class='bx bxs-photo-album'></i>
                     <span class="links_name">Images</span>
                 </a>
                 <span class="tooltip">Images</span>
             </li>
             <li>
                 <a href="/chefs">
-                    <i class='bx bx-heart'></i>
+                    <i class='bx bxs-cookie'></i>
                     <span class="links_name">Chefs</span>
                 </a>
                 <span class="tooltip">Chefs</span>
             </li>
             <li>
                 <a href="/customers">
-                    <i class='bx bx-cog'></i>
+                    <i class='bx bxs-comment'></i>
                     <span class="links_name">Customers</span>
                 </a>
                 <span class="tooltip">Customers</span>
             </li>
             <li>
                 <a href="/reservation">
-                    <i class='bx bx-cog'></i>
+                    <i class='bx bxs-book'></i>
                     <span class="links_name">Reservation</span>
                 </a>
                 <span class="tooltip">Reservation</span>
             </li>
             <li>
                 <a href="/footer">
-                    <i class='bx bx-cog'></i>
+                    <i class='bx bxs-copyright'></i>
                     <span class="links_name">Footer</span>
                 </a>
                 <span class="tooltip">Footer</span>
