@@ -59,7 +59,7 @@ class ReservationController extends Controller
      */
     public function edit(Reservation $reservation)
     {
-        return view('reservation.edit', compact('edit'));
+        return view('reservation.edit', compact('reservation'));
     }
 
     /**

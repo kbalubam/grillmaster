@@ -4,8 +4,8 @@
 
 
 
-    <div class="container d-flex justify-content-center mt-5">
-        <h1 class="text-white">Footer</h1>
+    <div class="container d-flex justify-content-center mt-5 text-danger">
+        <h1>Footer</h1>
         <a href="{{ route('footer.create') }}" class="btn mt-2"></a>
     </div>
 

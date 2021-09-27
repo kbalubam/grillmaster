@@ -1,7 +1,7 @@
 @extends('template.backoffice')
-<form class="formulaire" action="{{route('navbar.update', $navbar->id)}}" enctype="multipart/form-data" method="post" class="container mt-5 text-light">
+<form class="formulaire container" action="{{route('navbar.update', $navbar->id)}}" enctype="multipart/form-data" method="post" class="container mt-5 text-light">
     @csrf
-    Image: <input class="mt-2" type="text" value="{{$navbar->img}}" name="titrePrincipal">
+    Image: <input class="mt-2" type="file" value="{{$navbar->img}}" name="titrePrincipal">
     Titre part 1: <input class="mt-2" type="text" value="{{$navbar->titrePart1}}" name="titrePart1">
     Titre part 2: <input class="mt-2" type="text" value="{{$navbar->titrePart2}}" name="titrePart2">
     Link 1: <input class="mt-2" type="text" value="{{$navbar->link1}}" name="link1">

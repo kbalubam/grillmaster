@@ -4,13 +4,13 @@
 
 
 
-    <div class="container d-flex justify-content-center mt-5">
+    <div class="container d-flex justify-content-center mt-5 text-danger">
         <h1 class="text-white">Header</h1>
         <a href="{{ route('header.create') }}" class="btn mt-2"></a>
     </div>
 
 
-    <table class="table mt-5 container">
+    <table class="table mt-5 container text-light">
         <thead>
             <tr>
                 <th scope="col">ID</th>

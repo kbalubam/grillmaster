@@ -30,60 +30,70 @@
             </head>
 <body>
     <div class="sidebar">
-        <div class="logo-details">
-            <i class='bx bxl-c-plus-plus icon'></i>
-            <div class="logo_name">Start Bootstrap</div>
-            <i class='fa fa-' id="btn"></i>
-        </div>
+        
         <ul class="nav-list m-0 p-0"> 
             <li>
-                <a href="#">
+                <a href="/backoffice">
                     <i class="fab fa-themeisle"></i>
-                    <span class="links_name">User</span>
+                    <span class="links_name">Home</span>
                 </a>
-                <span class="tooltip">User</span>
+                <span class="tooltip">Home</span>
             </li>
             <li>
-                <a href="#">
+                <a href="/navbar">
                     <i class='bx bx-chat'></i>
-                    <span class="links_name">Messages</span>
+                    <span class="links_name">Navbar</span>
                 </a>
-                <span class="tooltip">Messages</span>
+                <span class="tooltip">Navbar</span>
             </li>
             <li>
-                <a href="#">
+                <a href="/header">
                     <i class='bx bx-pie-chart-alt-2'></i>
-                    <span class="links_name">Analytics</span>
+                    <span class="links_name">Header</span>
                 </a>
-                <span class="tooltip">Analytics</span>
+                <span class="tooltip">Header</span>
             </li>
             <li>
-                <a href="#">
+                <a href="/abouts">
                     <i class='bx bx-folder'></i>
-                    <span class="links_name">File Manager</span>
+                    <span class="links_name">About</span>
                 </a>
-                <span class="tooltip">Files</span>
+                <span class="tooltip">About</span>
             </li>
             <li>
-                <a href="#">
+                <a href="/image">
                     <i class='bx bx-cart-alt'></i>
-                    <span class="links_name">Order</span>
+                    <span class="links_name">Images</span>
                 </a>
-                <span class="tooltip">Order</span>
+                <span class="tooltip">Images</span>
             </li>
             <li>
-                <a href="#">
+                <a href="/chefs">
                     <i class='bx bx-heart'></i>
-                    <span class="links_name">Saved</span>
+                    <span class="links_name">Chefs</span>
                 </a>
-                <span class="tooltip">Saved</span>
+                <span class="tooltip">Chefs</span>
             </li>
             <li>
-                <a href="#">
+                <a href="/customers">
                     <i class='bx bx-cog'></i>
-                    <span class="links_name">Setting</span>
+                    <span class="links_name">Customers</span>
                 </a>
-                <span class="tooltip">Setting</span>
+                <span class="tooltip">Customers</span>
+            </li>
+            <li>
+                <a href="/reservation">
+                    <i class='bx bx-cog'></i>
+                    <span class="links_name">Reservation</span>
+                </a>
+                <span class="tooltip">Reservation</span>
+            </li>
+            <li>
+                <a href="/footer">
+                    <i class='bx bx-cog'></i>
+                    <span class="links_name">Footer</span>
+                </a>
+                <span class="tooltip">Footer</span>
             </li>
             <li class="profile">
                 <div class="profile-details">
